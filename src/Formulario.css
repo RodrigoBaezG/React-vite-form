@@ -1,0 +1,74 @@
+body {
+  /* Contenedor del body para centrar el formulario */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ocupa al menos el 100% de la altura de la ventana */
+  margin: 0;
+  background-color: #f0f2f5; /* Un color de fondo gris claro */
+  font-family: sans-serif;
+}
+
+.formulario {
+  /* Estilos para el contenedor principal del formulario */
+  background-color: #fff; /* Fondo blanco para la "tarjeta" */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 40px;
+  max-width: 500px;
+  width: 90%; /* Ancho flexible */
+  text-align: center;
+}
+
+.formulario h1 {
+  /* Estilos para el título principal */
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.formulario h2 {
+  /* Estilos para las etiquetas de los campos */
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.formulario input[type="text"],
+.formulario textarea {
+  /* Estilos para los campos de entrada y el área de texto */
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+  margin-top: 5px;
+}
+
+.formulario textarea {
+  /* Altura específica para el área de texto */
+  height: 100px;
+  resize: vertical; /* Permite redimensionar solo verticalmente */
+}
+
+.formulario button {
+  /* Estilos para el botón de enviar dentro del formulario */
+  background-color: #007bff; /* Color de fondo azul */
+  color: white; /* Color de las letras blancas */
+  border: none; /* Elimina el borde predeterminado */
+  padding: 10px 20px; /* Espaciado interno para que el botón sea más grande */
+  border-radius: 5px; /* Bordes ligeramente redondeados */
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+  width: 100%; /* El botón ocupará todo el ancho de su contenedor */
+  margin-top: 20px; /* Espacio superior para separarlo del campo de texto anterior */
+  transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+.formulario button:hover {
+  /* Estilo al pasar el ratón por encima del botón */
+  background-color: #0056b3; /* Un tono de azul más oscuro para el efecto hover */
+}
